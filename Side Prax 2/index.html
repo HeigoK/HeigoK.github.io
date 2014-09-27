@@ -46,7 +46,7 @@
 <td colspan=2> Ühendada omavahel arvuti-ja IP-telefon.</td>
 </tr>
 <tr>
-<td colspan=3><img src="" alt="LISA SIIA LABORI VÕRGUSKEEM!"></td>
+<td colspan=3><img src="Skeem.png" alt="LISA SIIA LABORI VÕRGUSKEEM!"></td>
 </TR>
 </TABLE>
 
@@ -60,7 +60,7 @@
 
 <h3>3. IP-telefoni seadistamine olekusse &bdquo;mitte segada&ldquo;</h3>
 <small>Küsimus: Mida helistatav väidetavalt teeb?<br>Vastus:</small>
-Is on the phone
+On hetkel hõivatud/on hetkel kõnes (Is on the phone).
 
 
 <h3>4. Videok&otilde;ne</h3>
@@ -68,17 +68,17 @@ Is on the phone
 H.263
 <p>
 <small>Küsimus 2: Millise käsuga saab kumbki osapool kõne ajal videost loobuda?<br>Vastus:</small>
-Stop Video
+Stop Video/Stop sending your video.
 
 
 <h3>5. K&otilde;nepost </h3>
 <small>Küsimus: Millisel juhul nähti kõneposti jäetud teate videosalvestust?<br>Vastus:</small>
-Kui seda IP-telefoni kõnepostist vaadata.
+Kui seda IP-telefoni kõnepostist vaadata (*97).
 
 
 <h3>6. K&otilde;ne suunamine</h3>
 <small>Küsimus 1: Kuidas töötab "kõne suunamine teisele isikule"?<br>Vastus:</small>
-Kõne IP-telefonile läheb teisele telefonile.
+Kõne IP-telefonile läheb teisele telefonile, pärast mõneajast viidet.
 <p>
 <small>Küsimus 2: Kuidas töötab tingimusteta suunamine?<br>Vastus:</small>
 Kõne läheb kohe teisele telefonile.
@@ -126,7 +126,13 @@ IP-telefonide vahel on video, aga mitte arvuti ja IP-telefoni vahel.
 <td>2592x1944</td>
 <td>10</td>
 <td>600000 kb/s</td>
-<td>LISA SIIA SUURIMA VÕIMALIKU ARVUTUSED</td>
+<td>
+2592 x 1944 = 5038848
+<br>
+5038848 x 12 = 60466176
+<br>
+60466176 x 10 = 604661760 b/s = 604 662 kb/s
+</td>
 </tr>
 <tr>
 <td colspan=6><img src="Resolutsioon1.png" alt="LISA SIIA SUURIMA VÕIMALIKU EKRAANIPILT!" style="height: 600px"></td>
@@ -148,7 +154,13 @@ IP-telefonide vahel on video, aga mitte arvuti ja IP-telefoni vahel.
 <td>640x480</td>
 <td>30.000030</td>
 <td>90000 kb/s</td>
-<td>LISA SIIA VGA ARVUTUSED!</td>
+<td>
+640 x 480 = 307200
+<br>
+307200 x 12 = 3686400
+<br>
+3686400 x 30.000030 = 110592110 b/s = 110 592 kb/s
+</td>
 </TR>
 <tr>
 <td colspan=6><img src="Resolutsioon2.png" alt="LISA SIIA VGA EKRAANIPILT!" style="height: 600px"></td>
@@ -170,7 +182,13 @@ IP-telefonide vahel on video, aga mitte arvuti ja IP-telefoni vahel.
 <td>352x288</td>
 <td>30.000030</td>
 <td>30000 kb/s</td>
-<td>LISA SIIA CIF ARVUTUSED!</td>
+<td>
+352 x 288 = 101376
+<br>
+101376 x 12 = 1216512
+<br>
+1216512 x 30.000030 = 36495396 b/s = 36 496 kb/s
+</td>
 </TR>
 <tr>
 <td colspan=6><img src="Resolutsioon3.png" alt="LISA SIIA CIF EKRAANIPILT!" style="height: 600px"></td>
@@ -192,7 +210,13 @@ IP-telefonide vahel on video, aga mitte arvuti ja IP-telefoni vahel.
 <td>176x144</td>
 <td>30.000030</td>
 <td>10500 kb/s</td>
-<td>LISA SIIA QCIF ARVUTUSED!</td>
+<td>
+176 x 144 = 25344
+<br>
+25344 x 12 = 304128
+<br>
+304128 x 30.000030 = 9123849 b/s = 9 124 kb/s
+</td>
 </TR>
 <tr>
 <td colspan=6><img src="Resolutsioon4.png" alt="LISA SIIA QCIF EKRAANIPILT!" style="height: 600px"></td>
@@ -203,13 +227,55 @@ IP-telefonide vahel on video, aga mitte arvuti ja IP-telefoni vahel.
 <h2>Individuaalülesande lahendus</h2>
 
 <p>
-KIRJUTA INDIVIDUAALÜLESANDE LAHENDUS SIIA!
+Valin andmed tabelist vastavalt matrikli numbrile 134493.
+</p>
 <p>
+Abonentide arv <b>N</b> = 130, välisliinide arv <b>L</b> = 5.
+<br>
+Ühe abonendi poolt tunnis linna tehtavate kõnede keskmine arv <b>n</b> = 3, ühe kõne keskmine kestus sekundites <b>t</b> = 100.
+</p>
+<p>
+Otsitava tõenäosuse leidmiseks kasutame Erlangi valemit:
+<br>
+<img src="http://www.lr.ttu.ee/side/labor/side_labor5_html_image002.gif">
+<br>
+kus ρ on sisendvoo taandatud intensiivsus, mis avaldub kujul <img src="http://www.lr.ttu.ee/side/labor/side_labor5_html_m53dcc705.gif">
+</p>
+<p>
+Esmalt arvutame sisendvoo: λ = N * n = 130 * 3 = 390 linnakõnet tunnis.
+</p>
+<p>
+Ühe teenindaja jõudlus ehk väljundvoog:
+<br>
+<img src="image002.png">
+<br>
+linnakõnet minutis.
+</p>
+<p>
+Sisendvoo taandatud intensiivsus ühe teenindaja kohta:
+<br>
+<img src="image003.png">
+<br>
+erlangi.
+</p>
+<p>
+Blokeerumise tõenäosus ehk kõik teenindajad (välisliinid) on hõivatud ja Teid ei teenindata arvutatakse Erlangi valemi järgi:
+<br>
+<img src="image004.png">
+</p>
+<p>
+See tähendab, et kümnest kõnesoovist kuuel juhul on välisliinid hõivatud.
+</p>
 
 <h2>Kokkuvõte ja järeldused</h2>
 
 <p>
-KIRJUTA KOKKUVÕTE JA JÄRELDUSED SIIA!
+Teises praktikumis õppisime kuidas IP telefoni ühendada arvutiga/serveriga ning seadistada nii IP telefoni kui arvuti enda VoIP tarkvara, et saaksime nende vahel edukalt ühendust pidada.
+Õppisime ning proovisime järele erinevaid IP telefoni poolt pakutavaid võimalusi: praeguse aja ning enda numbri pärimist, IP telefoni olekuid, videokõne, konverentskõne, kõneposti kuulamist,
+kõne suunamise meetodeid ning hindasime IP telefoni videokaamerat ja arvuti veebikaamera kvaliteeti.
+<br>
+Iseseisva tööna arvutasime välja veebikaamera pakkimata video edastuskiiruse erinevatel resolutsioonidel ning arvutasime Erlangi valemi abil etteantud tinguimustel liini hõivatuse
+tõenäosuse.
 <p>
 
 
