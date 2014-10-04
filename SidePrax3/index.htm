@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+      <html>
+       <title>Side labor 3 aruanne</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<body>
+<h1>Side labor 3 RS-liides ja modemid aruanne</h1>
+<TABLE BORDER=1 CELLPADDING=4 CELLSPACING=0>
+<TR>
+<td>Töö tegijate nimed:</td>
+</TR>
+<TR>
+<td>Heigo Kruusimaa</td>
+</TR>
+<TR>
+<td>Kert Ojasoo</td>
+</TR>
+<TR>
+<td>Töö tegemise kuupäev: Thu Oct  2 09:40:25 2014</td>
+</TR>
+</TABLE>
+<p>
+
+<H3>3.1 S&uuml;mboli edastamine RS-232C liidesel</H3>
+<p>
+OMA JOONISEL NÄIDATA, kus asuvad bitijadas start-bitt, paarsusbitt, stopp-bitid ja infobitid.
+<p>
+
+<TABLE  BORDER=1 CELLPADDING=4 CELLSPACING=0>
+<tr>
+<td>Liikme nimi</td>
+<td>Kert</td>
+</tr>
+<tr>
+<td>Valitud sümbol</td>
+<td>A</td>
+</tr>
+<tr>
+<td>Sümboli ASCII kood</td>
+<td>1000001</td>
+</tr>
+<tr>
+<td>signaali "1" nivoo</td>
+<td align=center>-10.8 V</td>
+</tr>
+<tr>
+<td>signaali "0" nivoo</td>
+<td align=center>10.8 V</td>
+</tr>
+<tr>
+<td>aeg esimese 0 nivoo algusest kuni viimase 0 nivoo lõpuni</td>
+<td>30 ms</td>
+</tr>
+<tr>
+<td>mitu bitti selle aja jooksul edastati</td>
+<td>9</td>
+</tr>
+<tr>
+<td>signaali pilt</td>
+<td><img src="F0000TEK.JPG" alt="LISA SIIA SIGNAALI KUJU PILT!" style="height: 300px"></td>
+</tr>
+</table>
+<p>
+OMA JOONISEL NÄIDATA, kus asuvad bitijadas start-bitt, paarsusbitt, stopp-bitid ja infobitid. 
+<p>
+<TABLE  BORDER=1 CELLPADDING=4 CELLSPACING=0>
+<tr>
+<td>Liikme nimi</td>
+<td>Heigo</td>
+</tr>
+<tr>
+<td>Valitud sümbol</td>
+<td>H</td>
+</tr>
+<tr>
+<td>Sümboli ASCII kood</td>
+<td>0001001</td>
+</tr>
+<tr>
+<td>signaali "1" nivoo</td>
+<td align=center>-10.8 V</td>
+</tr>
+<tr>
+<td>signaali "0" nivoo</td>
+<td align=center>10.8 V</td>
+</tr>
+<tr>
+<td>aeg esimese 0 nivoo algusest kuni viimase 0 nivoo lõpuni</td>
+<td>30 ms</td>
+</tr>
+<tr>
+<td>mitu bitti selle aja jooksul edastati</td>
+<td>9 (1 start-bitt + 7 andmebitti + 1 paarsusbitt)</td>
+</tr>
+<tr>
+<td>signaali pilt</td>
+<td><img src="F0001TEK.JPG" alt="LISA SIIA SIGNAALI KUJU PILT!" style="height: 300px"></td>
+</tr>
+</table>
+
+<p>
+Sümbolite edastuskiirus (bit/s):<br>
+30 ms jooksul edastati 9 bitti.
+<br>
+Järelikult 1 sekundi jooksul edastatakse 9 / 0.030 s =  300 bitti e. sümboli edastuskiirus on 300 bit/s.
+<p>
+<h4>Paarsuskontroll</h4>
+<TABLE  BORDER=1 CELLPADDING=4 CELLSPACING=0>
+<tr>
+<td>Mis muutus, kui paarsuskontrolli viisiks seada Odd</td>
+<td>Paarsusbitt sai vastupidise väärtuse, sest sümbolis oli paarisarv ühtesid ning
+<br>
+paarsuskontroll oli seatud Odd-iks, seega bitijadas peab sel juhul olema paarituarv ühtesid.
+</td>
+<td><img src="F0002TEK.JPG" alt="LISA SIIA SIGNAALI KUJU PILT!" style="height: 300px"></td>
+</tr>
+</table>
+
+<H3>3.2 Andmevahetus arvutite vahel nullmodemi abil</H3>
+<h4>Seadistus</h4>
+<TABLE  BORDER=1 CELLPADDING=4 CELLSPACING=0>
+<tr>
+<td>Seadistuse variant nr</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Edastuskiirus</td>
+<td>600</td>
+</tr>
+<tr>
+<td>Andmebittide arv</td>
+<td>8</td>
+</tr>
+<tr>
+<td>Paarsuskontroll</td>
+<td>Paaris<br>(even)</td>
+</tr>
+<tr>
+<td>Stoppbittide arv</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Voo juhtimine</td>
+<td>Puudub<br>(none)</td>
+</tr>
+
+</table>
+<p>
+<h4>Mõõtmised</h4>
+<TABLE  BORDER=1 CELLPADDING=4 CELLSPACING=0>
+<tr>
+<td>Paarsuskontroll ja edastatava sümboli valik</td>
+<td>Valitud sümbol ja sümboli ASCII kood</td>
+<td>Aeg esimese 0 nivoo algusest kuni viimase 0 nivoo lõpuni</td>
+<td>Mitu bitti selle aja jooksul edastati</td>
+</tr>
+<tr>
+
+<td><I><B>Even</B></I>, sümbolis "1" arv paaris</td>
+<td>7, 1110110</td>
+<td>15 ms</td>
+<td>9 (1 start-bitt + 8 andmebitti). Paarsusbitt saab 
+<br>
+väärtuseks 1 ning ei kuulu mõõdetavasse vahemikku</td>
+</tr><tr>
+<td colspan=4 align=center><img src="F0003TEK.JPG" alt="LISA SIIA SIGNAALI KUJU PILT!" style="height: 300px"></td>
+</tr>
+</table>
+<p>
+Sümbolite edastuskiirus (bit/s):<br>
+15 ms jooksul edastati 9 bitti.
+<br>
+Seega 1 sekundi jooksul edastati 9 / 0.015 s = 600 bitti, ehk 600 bit/s.
+
+<H3>3.3 Modem&uuml;hendus arvutite vahel</H3>
+
+<TABLE  BORDER=1 CELLPADDING=4 CELLSPACING=0>
+<tr>
+<td>Andmeedastust ei toimu, <br>
+2 kühmu sagedused</td>
+<td COLSPAN=2>980 Hz</td>
+<td COLSPAN=2>1,65 kHz</td>
+<td><img src="F0004TEK.JPG" alt="LISA SPEKTRI PILT!" style="height: 300px"><br></td>
+</tr>
+<tr>
+<td>Edastatakse mõlemalt poolt sümbolit @,<br> 
+4 kühmu sagedused</td>
+<td>980 Hz</td>
+<td>1,16 kHz</td>
+<td>1,65 kHz</td>
+<td>1,84 kHz</td>
+<td><img src="F0005TEK.JPG" alt="LISA SPEKTRI PILT!" style="height: 300px"><br></td>
+<tr>
+<td>Võrrelda joonis 3 ja saadud katsetulemusi</td>
+<td COLSPAN=5>Kühmud vastavad joonise 3 kühmudele.</td>
+</tr>
+<tr>
+
+
+</tr>
+</table>
+
+
+<h2>3.4 Kodune individuaalülesanne</h2>
+<p>
+Matrikli number: 134493.
+<br>
+Andme bittide arv N = 134493 x 27 = 3 631 311 bitti.
+</p>
+<p>
+Vastavalt üliõpilaskoodi viimasele numbrile:
+<br>
+Kiirus (baud rate): 38400
+<br>
+Andmebitte (data): 8
+<br>
+Paarsuskontroll (parity): paaris (even)
+<br>
+Stopp-bitte: 1
+<br>
+Voo juhtimine: puudub (none)
+</p>
+<p>
+Järjestikliidesega edastamisel saab iga andmebitt juurde 1 start-, 1 paarsus -ja 1 stop-bitti.
+<br>
+Seega on vaja andmebitid korrutada läbi järjestikliidese biti suurusega (8 + 1 + 1 +1) ning jagada andmebittide arvuga.
+<br>
+Järjestikliidesega edastatavate bittide arv: (3 631 311 x 11) / 8 = 4 993 053 bitti.
+<br>
+Edastamiseks kuluv aeg: 4 993 053 / 38400 = 130 sekundit.
+</p>
+
+<H2>Kokkuvõte ja järeldused</h2>
+<p>
+Kolmandas laboris edastasime asünkroonse järjestikliidesega andmeid kasutades terminaliliidest RS-232. Õppisime erinevaid terminali ühendusviise: vahetult liidesesignaale ülekandes, arvutite
+vahel ning telefonikaabli kaudu modemite vahendusel. Mõõtsime ostsillograafiga üksiku sümboli signaale, seades stop-bittide arvu ning paarsuskontrolli. Vaatlesime  sümboli '@' edastamisel
+modemite vahendusel signaali spektrit. Iseseisvalt arvutasime sümbolite edastuskiiruse järestikliidesega erinevatel kiirustel ning erinevate seadetega. Õppisime paarsusbiti põhimõtet.
+<br>
+Jäjestikliidesega edastamisel liituvad igale andmebitile juurde start-bitt, paarsusbitt ning stop-bitid. Start-bitiga algab sümboli edastus, stop-bitiga lõppeb ning paarsusbitt kontrollib selle
+õigsust.
+</P>
+
+
+
+
+
+
+</body></html>
