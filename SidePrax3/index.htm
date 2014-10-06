@@ -220,11 +220,13 @@ Voo juhtimine: puudub (none)
 <p>
 Järjestikliidesega edastamisel saab iga andmebitt juurde 1 start-, 1 paarsus -ja 1 stop-bitti.
 <br>
-Seega on vaja andmebitid korrutada läbi järjestikliidese biti suurusega (8 + 1 + 1 +1) ning jagada andmebittide arvuga.
+Ühele sümbolile vastab 8 andmebitti, seega on vaja edastada 3 631 311 / 8 = 453 913 sümbolit.
 <br>
-Järjestikliidesega edastatavate bittide arv: (3 631 311 x 11) / 8 = 4 993 053 bitti.
+Igale sümbolile lisandub juurde 3 bitti, seega 454 913 x 3 = 1 361 738.
 <br>
-Edastamiseks kuluv aeg: 4 993 053 / 38400 = 130 sekundit.
+Lisame lisabittide arvu andmebittidele ja saame edastavate bittide koguarvu: 1 361 738 + 3 631 311 = 4 993 049.
+<br>
+Edastamiseks kuluv aeg: 4 993 049 / 38400 = 130 sekundit.
 </p>
 
 <H2>Kokkuvõte ja järeldused</h2>
