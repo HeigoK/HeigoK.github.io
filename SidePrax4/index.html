@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0039)http://lr.ttu.ee/labreg/aruanne_WLAN.pl -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Side labor 4 aruanne</title>
+
+</head><body>
+<h1>Side labor 4 Traadita kohtvõrk WLAN aruanne</h1>
+
+<table border="1" cellpadding="4" cellspacing="0">
+<tbody><tr>
+<td>Töö tegijate nimed:</td>
+</tr>
+<tr>
+<td>Reenika East</td>
+</tr>
+<tr>
+<td>Heigo Kruusimaa</td>
+</tr>
+<tr>
+<td>Töö tegemise kuupäev: Thu Oct 30 11:09:24 2014</td>
+</tr>
+</tbody></table>
+
+<h2>1. WLAN tugijaama seadistamine</h2>
+<h3>WLAN tugijaama seadistamise IP osa</h3>
+<table border="1">
+<tbody><tr>
+<td>Variant nr</td>
+<td>Võrgu aadress</td>
+<td>Maski bittide arv</td>
+<td>Võrgus seadmetele antavate aadresside max arv</td>
+<td>võrgumask kümnendkujul</td>
+<td>Esimene kasutatav aadress - <br>tugijaama IP aadress</td>
+<td>Teine kasutatav aadress - <br>esimene DHCPga jagatav aadress</td>
+<td>Viimane kasutatav aadress - <br>viimane DHCPga jagatav aadress</td>
+<td>Aadressruumi viimane aadress, levisaade (<i>broadcast</i>)</td>
+</tr>
+<tr><td>2</td><td>10.25.149.16</td><td>28</td><td>14</td><td>255.255.255.240</td><td>10.25.149.17</td><td>10.25.149.18</td><td>10.25.149.30</td><td>10.25.149.31</td></tr></tbody></table>
+<p>Võrgu aadressi maski bittide arv (28) oli ette antud. Ehk vabu bitte aadressiruumis on 32-28 = 4, mis tõlgendub 2<sup>4</sup> = 16 aadressiks. Kuna esimest aadressi ning viimast
+aadressi kasutada ei saa, jääb meie kasutusele 14 vaba aadressi.</p>
+<p>IPv4 jaotub neljaks osaks (x.x.x.x), iga osa 8 bitti (2<sup>8</sup> = 256 võimalikku väärtust). Võrgumask näitab mitu bitti on meil kasutada, mitu pole kasutatavad. Meie näite puhul on kinni 
+2<sup>8</sup>.2<sup>8</sup>.2<sup>8</sup>.2<sup>8</sup>-2<sup>4</sup> võimalikku aadressi ehk 255.255.255.240 (number 0 kuulub ka antud vahemikku, mistõttu 1 võrra väiksemad väärtused).</p>
+<p>Kuna esimene aadress (10.25.149.16) ja viimane aadress (10.25.149.31) on reserveeritud vastavalt võrgu aadressiks ja broadcasti aadressiks jääb kasutatav vahemik 10.25.149.17 ja 10.25.149.30
+vahele.</p>
+<h3>WLAN tugijaama seadistamise WLAN osa</h3>
+<table border="1" cellpadding="4" cellspacing="0">
+<tbody><tr>
+<td><small>2,4 GHz võrgu nimi</small><br>
+SideLaborA1</td>
+<td><small>2,4 GHz kanali number</small><br>
+6</td>
+</tr>
+<tr>
+<td><small>5 GHz võrgu nimi</small><br>
+LaborSideA1</td>
+<td><small>5 GHz kanali number</small><br>
+44</td>
+</tr>
+</tbody></table>
+
+
+<h2>2. WLAN spektri mõõtmine</h2>
+<table border="1" cellpadding="4" cellspacing="0">
+<tbody><tr>
+<td>katse</td>
+<td>WLAN kanalid</td>
+<td>Mõõdetud spektri alumine sagedus</td>
+<td>Mõõdetud spektri ülemine sagedus</td>
+<td>Mõõdetud  spektri laius</td>
+</tr>
+<tr><td>1</td>
+<td>1 ja 6</td>
+<td>2.4010 GHz</td>
+<td>2.4210 GHz</td>
+<td>200 Hz</td>
+</tr><tr>
+<td colspan="7"><img src="Screen_20141030_125742 1.6.png" alt="LISA SIIA KATSE 1 SPEKTRIPILT!" style="height: 600px"></td></tr>
+</tbody></table>
+<p>
+</p><table border="1" cellpadding="4" cellspacing="0">
+<tbody><tr>
+<td>katse</td>
+<td>WLAN kanalid</td>
+<td>Mõõdetud spektri alumine sagedus</td>
+<td>Mõõdetud spektri ülemine sagedus</td>
+<td>Mõõdetud  spektri laius</td>
+</tr>
+<tr><td>2</td>
+<td>1 ja 4</td>
+<td>2.4020 GHz</td>
+<td>2.4200 GHz</td>
+<td>180 Hz</td>
+</tr>
+<tr>
+<td colspan="7"><img src="Screen_20141030_124903 1.4.png" alt="LISA SIIA KATSE 2 SPEKTRIPILT!" style="height: 600px"></td></tr>
+</tbody></table>
+<h2>3. WLAN võrgu uurimine</h2>
+<h3>Windowsi käsurea käskude väljundid:</h3>
+<ol>
+<li><font face="Courier New, monospace">netsh wlan show interface</font>
+<pre><a href="interface.txt">Link väljundfailile</a>
+</pre>
+</li><li><font face="Courier New, monospace"> netsh wlan show networks mode=BSSID</font><br>
+<pre><a href="BSSID.txt">Link väljundfailile</a>
+</pre>
+</li></ol>
+
+<h3>Programmi <font face="Courier New, monospace"><i>inSSIDer 3</i></font> ekraanipilt</h3>
+
+<img src="inssider2.png" alt="LISA SIIA INSSIDER EKRAANIPILT!" style="height: 600px">
+<p>
+
+</p><h3>Küsimused:</h3>
+<ol>
+<li><small>Mitu ja millised on 802.11a standardi, millised on 802.11b või 802.11g standardi ning millised on 802.11n standardi võrgud (vaadata netsh käsu väljundfailidest)?</small><br>
+802.11a standardi võrke on 2: eduroam ja TTU.<br>
+802.11b standardi võrke on 1: orinoco.<br>
+802.11g standardi võrke on 8: eduroam, Eilaev2lja, TTU, TsaarKiptsa, TetraNET24ghz, IfiWifi, MaRaakisinJuba, SideLaborA1.<br>
+802.11n standardi võrke on 6: Eilaev2lja, WifiIfi, TsaarKelement, TetraNET5ghz, L4A6, LaborSideA1.
+</li><li><small>Kui palju on võrreldavate võrkude Link Score ja mida sellest järeldada võib? </small><br>
+Meie poolt üles seatud võrgu SideLaborA1 Link Score on 33 ning võrreldava võrgu ProLab Link Score on 17.<br>
+Sellest võib järeldada, et suurema Link Score korral on ühenduse kvaliteet kõrgem.
+</li><li><small>Selgitada <font face="Courier New, monospace"><i>inSSIDer</i></font>'i tabelis näidatavate MAC aadresside tähendust.</small><br>
+MAC aadress on võrgukaartidele juba tootmise käigus määratud ainulaadne aadress, mille abil on võimalik eristada võrguseadmeid.
+</li><li><small>Millised raadiokanalid on kasutuses ja kus on veel vaba ruumi uute võrkude jaoks?</small><br>
+Kasutuses on kanalid 1, 4, 6, 11, 36, 40, 44 ja 48.<br>
+Vabad kanalid 2.4GHz võrkude seas on 2, 3, 5, 7-10, 12, 13 ja 5GHz võrkude seas 52, 56, 60, 64 jne.
+</li></ol>
+
+
+<h2>4. WLAN võrgu kiiruste uurimine</h2>
+<table border="1" cellpadding="4" cellspacing="0">
+<tbody><tr>
+<td colspan="2">Valitud kanali number 802.11g (2,4 GHz) võrgus: 
+11</td></tr>
+<tr><td>Hinnang TCP katsetulemustele:<br>
+Ei olnud kõige stabiilsem ühendus nagu piltidelt näha.<br>
+Esimese katse puhul lakkas ta alguses üldse pakette saatmast.<br>
+Teise katse puhul oli suur ja tihe kiiruste kõikumine.<br>
+Maksimaalne kiirus kõikus 5-10 Mbit/s vahel.</td>
+<td>
+<img src="1.1.png" alt="LISA KATSE 1 TULEMUSTE PILT!"><br>
+<img src="1.2.png" alt="LISA KATSE 2 TULEMUSTE PILT!"><br>
+<img src="1.3.png" alt="LISA KATSE 3 TULEMUSTE PILT!"><br>
+</td>
+</tr>
+<tr>
+<td>Hinnang UDP katsetulemustele:<br>
+Ühendus lakkas tihti paariks sekundiks kõigil kolmel katsel.<br>
+Maksimaalne kiirus kõikus 2.7-3.5 Mbit/s vahel.<br>
+Ilmselt esines nende katsete puhul mingisugune ühenduse tõrge.</td>
+<td>
+<img src="2.1.png" alt="LISA KATSE 1 TULEMUSTE PILT!"><br>
+<img src="2.2.png" alt="LISA KATSE 2 TULEMUSTE PILT!"><br>
+<img src="2.3.png" alt="LISA KATSE 3 TULEMUSTE PILT!"><br>
+</td>
+</tr></tbody></table>
+<p>
+</p><table border="1" cellpadding="4" cellspacing="0">
+<tbody><tr>
+<td colspan="2">Valitud kanali number 802.11n (5 GHz) võrgus:
+44</td></tr><tr>
+<td>Hinnang TCP katsetulemustele:<br>
+Kuigi kiirus vajus mõnel katsel, ühendus on stabiilsem ning<br>
+nagu arvata ka kiirem, kus maksimumkiirus kerkis 100 Mbit/s.</td>
+<td>
+<img src="3.1.png" alt="LISA KATSE 1 TULEMUSTE PILT!"><br>
+<img src="3.2.png" alt="LISA KATSE 2 TULEMUSTE PILT!"><br>
+<img src="3.3.png" alt="LISA KATSE 3 TULEMUSTE PILT!"><br>
+</td>
+</tr>
+<tr><td>Hinnang UDP katsetulemustele:<br>
+Võrreldes 2.4 GHz võrgule on siin UDP ühendus märgatavalt<br>
+stabiilsem ning kiirem ulatudes kiirusteni 180 Mbit/s.</td>
+<td>
+<img src="4.1.png" alt="LISA KATSE 1 TULEMUSTE PILT!"><br>
+<img src="4.2.png" alt="LISA KATSE 2 TULEMUSTE PILT!"><br>
+<img src="4.3.png" alt="LISA KATSE 3 TULEMUSTE PILT!"><br>
+</td>
+</tr>
+</tbody></table>
+<p>
+
+<img src="Graph2.4.png" alt="LISA JPERF VÄLJUNDFAILIDE ANDMETEST KOOSTATUD VÕRGU KIIRUSTE MUUTUMISTE GRAAFIK SIIA!" style="height: 600px">
+<img src="Graph5.png" alt="LISA JPERF VÄLJUNDFAILIDE ANDMETEST KOOSTATUD VÕRGU KIIRUSTE MUUTUMISTE GRAAFIK SIIA!" style="height: 600px">
+</p><p>
+Milline oli mõlema võrgu (802.11g ja 802.11n) korral maksimaalne saavutatud kiirus mõlema protokolli (TCP ja UDP) korral?</p>
+<p>802.11g (2.4 GHz) võrgus oli TCP protokolli puhul suurimaks kiiruseks 10 289 Kbits/s, UDP protokolli puhul 3 399 Kbits/s.</p>
+<p>802.11n (5 GHz) võrgus oli TCP protokolli suurimaks kiiruseks 103 875 Kbits/s, UDP protokolli puhul 183 750 Kbits/s.</p>
+
+<h2>Individuaalülesanne</h2>
+<p>Shannoni valem sidekanali l&auml;bilaske arvutamiseks: R = W log<sub>2</sub>(1+S/N)</p>
+Vastavalt matrikli numbrile (134493) on antud andmed: W = 100 MHz, N = -69 dBm, S = 0,0025 mW.
+<ul>
+<li>
+<p>Esmalt teisendan antud signaali S = 0.0025 mW detsibellideks:</p>
+<img src="Signal.png" alt="Signaal (dBm)"></li><li>
+<p>Seejärel arvutan signaali/müra suhte:</p>
+S/N = S - N = -26 - (-69) = 43 dB</li><li>
+<p>Nüüd leian antud müra N = -69 dB võimsuse ühikutes mW:</p>
+<img src="Noise.png" alt="Noise (mW)"></li><li>
+<p>Samuti teisendan eelnevalt arvutatud signaali/müra suhte:</p>
+<img src="SNR.png" alt="SNR"></li><li>
+<p>Ning lõpuks arvutan saadud tulemustega Shannoni valemi abil sidekanali läbilaske:</p>
+<img src="Shannon.png" alt="Shannoni valem"></li>
+</ul>
+<TABLE WIDTH=200 BORDER=1 CELLPADDING=4 CELLSPACING=0>
+	<TR>
+		<TD WIDTH=49>
+			<B>Suurus</B>
+		</TD>
+		<TD WIDTH=39>
+			<B>&Uuml;hik</B>
+		</TD>
+		<TD WIDTH=25 ALIGN="center">
+			<B>3</B>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=49>
+			<B>R</B>
+		</TD>
+		<TD WIDTH=39>
+			Mbps
+		</TD>
+		<TD WIDTH=25 ALIGN="right">
+			<b>1428</b>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=49>
+			<B>W</B>
+		</TD>
+		<TD WIDTH=39>
+			MHz
+		</TD>
+		<TD WIDTH=25 ALIGN="right">
+			100
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=49>
+			<B>S</B>
+		</TD>
+		<TD WIDTH=39>
+			dBm
+		</TD>
+		<TD WIDTH=25 ALIGN="right">
+			<b>-26</b>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=49>
+			<B>N</B>
+		</TD>
+		<TD WIDTH=39>
+			dBm
+		</TD>
+		<TD WIDTH=25 ALIGN="right">
+			-69
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=49>
+			<B>S/N</B>
+		</TD>
+		<TD WIDTH=39>
+			dB
+		</TD>
+		<TD WIDTH=25 ALIGN="right">
+			<b>43</b>
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=49>
+			<B>S</B>
+		</TD>
+		<TD WIDTH=39>
+			mW
+		</TD>
+		<TD WIDTH=25 ALIGN="right">
+			0,0025
+		</TD>
+	</TR>
+	<TR>
+		<TD WIDTH=49>
+			<B>N</B>
+		</TD>
+		<TD WIDTH=39>
+			mW
+		</TD>
+		<TD WIDTH=25 ALIGN="right">
+			<b>0,0013*10<sup>-4</sup></b>
+		</TD>
+	</TR>
+</TABLE>
+<h2>Kokkuvõte ja järeldused</h2>
+
+<p>
+Selles laboris seadsime üles 802.11g ning 802.11n standardi WLAN võrgud. Testisime neid võrke esmalt spektrianalüsaatoriga, pannes wifi külge ühendatud arvuti faili alla tõmbama ning seejärel 
+tema spektrit mõõtes. Võrdlesime programmiga inSSIDer meie võrku teiste võrkudega ning tutvusime erinevate võrgu standarditega ja võrkude kvaliteedi hindamisega. Seejärel uurisime WLAN-i võrgu
+kiirust ja kvaliteeti programmiga JPerf 802.11g (2.4GHz) standardil ja 802.11n (5GHz) standardil nii TCP kui UDP protokolliga. 802.11g standardiga mõõtmise ajal tekkis ilmselt mingisugune
+ühenduse probleem, kus ühendus katkes tihti paariks sekundiks. Tulemustest järeldus, et 802.11n võrgu kiirused on märgatavalt suuremad 802.11g võrgu kiirustest.
+</p><p>
+
+</p></body></html>

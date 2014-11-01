@@ -1,0 +1,366 @@
+Interface name : Wireless Network Connection 
+There are 14 networks currently visible. 
+
+SSID 1 : eduroam
+    Network type            : Infrastructure
+    Authentication          : WPA2-Enterprise
+    Encryption              : CCMP 
+    BSSID 1                 : 00:1f:da:28:3b:c2
+         Signal             : 60%  
+         Radio type         : 802.11g
+         Channel            : 1 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 2                 : 00:1f:da:28:88:02
+         Signal             : 100%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 3                 : 00:1f:da:28:68:82
+         Signal             : 44%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 4                 : 00:1f:da:28:69:02
+         Signal             : 76%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 5                 : 00:1f:da:28:77:02
+         Signal             : 100%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 6                 : 00:1f:da:28:86:82
+         Signal             : 48%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 7                 : 00:1f:da:28:86:83
+         Signal             : 40%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 8                 : 00:1f:da:28:3b:c3
+         Signal             : 44%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 9                 : 00:1f:da:28:68:83
+         Signal             : 24%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 10                 : 00:1f:da:28:3b:43
+         Signal             : 32%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 11                 : 00:1f:da:28:88:03
+         Signal             : 100%  
+         Radio type         : 802.11a
+         Channel            : 40 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 12                 : 00:1f:da:28:69:03
+         Signal             : 84%  
+         Radio type         : 802.11a
+         Channel            : 40 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 13                 : 00:1f:da:28:6e:03
+         Signal             : 44%  
+         Radio type         : 802.11a
+         Channel            : 40 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 14                 : 00:1f:da:28:77:03
+         Signal             : 96%  
+         Radio type         : 802.11a
+         Channel            : 44 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 15                 : 00:1f:da:28:3d:42
+         Signal             : 56%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 16                 : 00:1f:da:28:3d:43
+         Signal             : 36%  
+         Radio type         : 802.11a
+         Channel            : 48 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 17                 : 00:1f:da:28:7c:83
+         Signal             : 32%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 18                 : 00:1f:da:28:8a:43
+         Signal             : 44%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+
+SSID 2 : orinoco
+    Network type            : Infrastructure
+    Authentication          : Open
+    Encryption              : None 
+    BSSID 1                 : 00:02:2d:20:8b:9a
+         Signal             : 100%  
+         Radio type         : 802.11b
+         Channel            : 1 
+         Basic rates (Mbps) : 1 2 5.5 11
+
+SSID 3 : Eilaev2lja
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:a9
+         Signal             : 100%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 2                 : 2c:b0:5d:a6:98:ab
+         Signal             : 92%  
+         Radio type         : 802.11n
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+
+SSID 4 : TTU
+    Network type            : Infrastructure
+    Authentication          : Open
+    Encryption              : None 
+    BSSID 1                 : 00:1f:da:28:88:00
+         Signal             : 100%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 2                 : 00:1f:da:28:68:80
+         Signal             : 40%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 3                 : 00:1f:da:28:69:00
+         Signal             : 72%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 4                 : 00:1f:da:28:86:81
+         Signal             : 44%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 5                 : 00:1f:da:28:8a:41
+         Signal             : 40%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 6                 : 00:1f:da:28:3b:c1
+         Signal             : 40%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 7                 : 00:1f:da:28:68:81
+         Signal             : 40%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 8                 : 00:1f:da:28:88:01
+         Signal             : 100%  
+         Radio type         : 802.11a
+         Channel            : 40 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 9                 : 00:1f:da:28:69:01
+         Signal             : 28%  
+         Radio type         : 802.11a
+         Channel            : 40 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 10                 : 00:1f:da:28:6e:01
+         Signal             : 40%  
+         Radio type         : 802.11a
+         Channel            : 40 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 11                 : 00:1f:da:28:77:01
+         Signal             : 96%  
+         Radio type         : 802.11a
+         Channel            : 44 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 12                 : 00:1f:da:28:3d:40
+         Signal             : 48%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 13                 : 00:1f:da:28:7c:81
+         Signal             : 32%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 14                 : 00:1f:da:28:86:80
+         Signal             : 48%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 15                 : 00:1f:da:28:3d:41
+         Signal             : 24%  
+         Radio type         : 802.11a
+         Channel            : 48 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 16                 : 00:1f:da:28:77:00
+         Signal             : 100%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+    BSSID 17                 : 00:1f:da:28:3b:41
+         Signal             : 32%  
+         Radio type         : 802.11a
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+    BSSID 18                 : 00:1f:da:28:3b:c0
+         Signal             : 60%  
+         Radio type         : 802.11g
+         Channel            : 1 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 5 : TsaarKiptsa
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:73
+         Signal             : 100%  
+         Radio type         : 802.11g
+         Channel            : 6 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 6 : TetraNET24ghz
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:58
+         Signal             : 100%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 7 : IfiWifi
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:49
+         Signal             : 96%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 8 : MaRaakisinJuba
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:96:b4
+         Signal             : 88%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 9 : WifiIfi
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:4b
+         Signal             : 96%  
+         Radio type         : 802.11n
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+
+SSID 10 : TsaarKelement
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:75
+         Signal             : 80%  
+         Radio type         : 802.11n
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+
+SSID 11 : TetraNET5ghz
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:98:5a
+         Signal             : 84%  
+         Radio type         : 802.11n
+         Channel            : 36 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+
+SSID 12 : L4A6
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:96:b6
+         Signal             : 100%  
+         Radio type         : 802.11n
+         Channel            : 48 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+
+SSID 13 : SideLaborA1
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:99:87
+         Signal             : 100%  
+         Radio type         : 802.11g
+         Channel            : 11 
+         Basic rates (Mbps) : 1 2 5.5 11
+         Other rates (Mbps) : 6 9 12 18 24 36 48 54
+
+SSID 14 : LaborSideA1
+    Network type            : Infrastructure
+    Authentication          : WPA2-Personal
+    Encryption              : CCMP 
+    BSSID 1                 : 2c:b0:5d:a6:99:89
+         Signal             : 100%  
+         Radio type         : 802.11n
+         Channel            : 44 
+         Basic rates (Mbps) : 6 12 24
+         Other rates (Mbps) : 9 18 36 48 54
+

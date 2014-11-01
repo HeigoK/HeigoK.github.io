@@ -1,0 +1,20 @@
+There is 1 interface on the system: 
+
+    Name                   : Wireless Network Connection
+    Description            : D-Link DWA-160 Xtreme N Dual Band USB Adapter(rev.B2)
+    GUID                   : c1588df5-6ed8-4163-9966-8a2339f64fb6
+    Physical address       : bc:f6:85:05:29:33
+    State                  : connected
+    SSID                   : NETGEAR22
+    BSSID                  : 2c:b0:5d:a6:99:89
+    Network type           : Infrastructure
+    Radio type             : 802.11g
+    Authentication         : WPA2-Personal
+    Cipher                 : CCMP
+    Connection mode        : Discovery (secured)
+    Channel                : 11
+    Receive rate (Mbps)    : 54
+    Transmit rate (Mbps)   : 54
+    Signal                 : 100% 
+
+    Hosted network status  : Not available
