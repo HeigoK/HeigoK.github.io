@@ -6,7 +6,7 @@ There is 1 interface on the system:
     Physical address       : bc:f6:85:05:29:33
     State                  : connected
     SSID                   : NETGEAR22
-    BSSID                  : 2c:b0:5d:a6:99:89
+    BSSID                  : 2c:b0:5d:a6:99:87
     Network type           : Infrastructure
     Radio type             : 802.11g
     Authentication         : WPA2-Personal
