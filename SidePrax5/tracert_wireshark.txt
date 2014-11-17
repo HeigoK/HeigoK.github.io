@@ -1,0 +1,117 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000000    192.168.252.164       193.40.252.144        DNS      75     Standard query 0x94da  A www.example.com
+      2 0.037969000    193.40.252.144        192.168.252.164       DNS      227    Standard query response 0x94da  A 93.184.216.119
+      3 0.044259000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=9/2304, ttl=1 (no response found!)
+      4 0.044742000    192.168.252.1         192.168.252.164       ICMP     134    Time-to-live exceeded (Time to live exceeded in transit)
+      5 0.045647000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=10/2560, ttl=1 (no response found!)
+      6 0.046117000    192.168.252.1         192.168.252.164       ICMP     134    Time-to-live exceeded (Time to live exceeded in transit)
+      7 0.046942000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=11/2816, ttl=1 (no response found!)
+      8 0.047379000    192.168.252.1         192.168.252.164       ICMP     134    Time-to-live exceeded (Time to live exceeded in transit)
+      9 0.048563000    192.168.252.164       193.40.252.144        DNS      86     Standard query 0x8ea6  PTR 1.252.168.192.in-addr.arpa
+     10 0.049692000    193.40.252.144        192.168.252.164       DNS      159    Standard query response 0x8ea6  PTR sise-gw.lr-sise
+     11 1.060894000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=12/3072, ttl=2 (no response found!)
+     12 1.061950000    193.40.252.254        192.168.252.164       ICMP     134    Time-to-live exceeded (Time to live exceeded in transit)
+     13 1.062428000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=13/3328, ttl=2 (no response found!)
+     14 1.064261000    193.40.252.254        192.168.252.164       ICMP     134    Time-to-live exceeded (Time to live exceeded in transit)
+     15 1.064827000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=14/3584, ttl=2 (no response found!)
+     16 1.065553000    193.40.252.254        192.168.252.164       ICMP     134    Time-to-live exceeded (Time to live exceeded in transit)
+     17 1.066317000    192.168.252.164       193.40.252.144        DNS      87     Standard query 0xbcf7  PTR 254.252.40.193.in-addr.arpa
+     18 1.068133000    193.40.252.144        192.168.252.164       DNS      227    Standard query response 0xbcf7  PTR PP1648T.ttu.ee
+     19 2.075021000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=15/3840, ttl=3 (no response found!)
+     20 2.077230000    193.40.242.50         192.168.252.164       ICMP     134    Time-to-live exceeded (Time to live exceeded in transit)
+     21 2.078086000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=16/4096, ttl=3 (no response found!)
+     22 2.079926000    193.40.242.50         192.168.252.164       ICMP     134    Time-to-live exceeded (Time to live exceeded in transit)
+     23 2.080795000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=17/4352, ttl=3 (no response found!)
+     24 2.081782000    193.40.242.50         192.168.252.164       ICMP     134    Time-to-live exceeded (Time to live exceeded in transit)
+     25 2.083114000    192.168.252.164       193.40.252.144        DNS      86     Standard query 0x3792  PTR 50.242.40.193.in-addr.arpa
+     26 2.084829000    193.40.252.144        192.168.252.164       DNS      297    Standard query response 0x3792  PTR ttu-gw2-vrrp.ttu.ee
+     27 3.089001000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=18/4608, ttl=4 (no response found!)
+     28 3.091382000    193.40.244.198        192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+     29 3.092264000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=19/4864, ttl=4 (no response found!)
+     30 3.093531000    193.40.244.198        192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+     31 3.094393000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=20/5120, ttl=4 (no response found!)
+     32 3.097235000    193.40.244.198        192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+     33 3.098555000    192.168.252.164       193.40.252.144        DNS      87     Standard query 0x668c  PTR 198.244.40.193.in-addr.arpa
+     34 3.100144000    193.40.252.144        192.168.252.164       DNS      292    Standard query response 0x668c  PTR ttu-gw.eenet.ee
+     35 4.087363000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=21/5376, ttl=5 (no response found!)
+     36 4.090906000    109.105.98.113        192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+     37 4.091762000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=22/5632, ttl=5 (no response found!)
+     38 4.093966000    109.105.98.113        192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+     39 4.094831000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=23/5888, ttl=5 (no response found!)
+     40 4.098024000    109.105.98.113        192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+     41 4.099345000    192.168.252.164       193.40.252.144        DNS      87     Standard query 0x1c92  PTR 113.98.105.109.in-addr.arpa
+     42 4.100885000    193.40.252.144        192.168.252.164       DNS      210    Standard query response 0x1c92  PTR fi-csc.nordu.net
+     43 5.085747000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=24/6144, ttl=6 (no response found!)
+     44 5.096318000    109.105.97.89         192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     45 5.097186000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=25/6400, ttl=6 (no response found!)
+     46 5.106070000    109.105.97.89         192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     47 5.106981000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=26/6656, ttl=6 (no response found!)
+     48 5.116724000    109.105.97.89         192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     49 5.118053000    192.168.252.164       193.40.252.144        DNS      86     Standard query 0xb75e  PTR 89.97.105.109.in-addr.arpa
+     50 5.119521000    193.40.252.144        192.168.252.164       DNS      209    Standard query response 0xb75e  PTR se-tug.nordu.net
+     51 6.115281000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=27/6912, ttl=7 (no response found!)
+     52 6.139464000    109.105.97.10         192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     53 6.140404000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=28/7168, ttl=7 (no response found!)
+     54 6.173449000    109.105.97.10         192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     55 6.174435000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=29/7424, ttl=7 (no response found!)
+     56 6.198294000    109.105.97.10         192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     57 6.199629000    192.168.252.164       193.40.252.144        DNS      86     Standard query 0x6953  PTR 10.97.105.109.in-addr.arpa
+     58 6.201114000    193.40.252.144        192.168.252.164       DNS      209    Standard query response 0x6953  PTR dk-uni.nordu.net
+     59 7.176089000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=30/7680, ttl=8 (no response found!)
+     60 7.200056000    109.105.97.132        192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     61 7.200917000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=31/7936, ttl=8 (no response found!)
+     62 7.221325000    109.105.97.132        192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     63 7.222182000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=32/8192, ttl=8 (no response found!)
+     64 7.243525000    109.105.97.132        192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     65 7.244859000    192.168.252.164       193.40.252.144        DNS      87     Standard query 0xf365  PTR 132.97.105.109.in-addr.arpa
+     66 7.246366000    193.40.252.144        192.168.252.164       DNS      210    Standard query response 0xf365  PTR dk-ore.nordu.net
+     67 8.221281000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=33/8448, ttl=9 (no response found!)
+     68 8.251858000    109.105.97.137        192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     69 8.252750000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=34/8704, ttl=9 (no response found!)
+     70 8.284378000    109.105.97.137        192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     71 8.285257000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=35/8960, ttl=9 (no response found!)
+     72 8.315703000    109.105.97.137        192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     73 8.317036000    192.168.252.164       193.40.252.144        DNS      87     Standard query 0xaf42  PTR 137.97.105.109.in-addr.arpa
+     74 8.318473000    193.40.252.144        192.168.252.164       DNS      210    Standard query response 0xaf42  PTR nl-sar.nordu.net
+     75 9.297641000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=36/9216, ttl=10 (no response found!)
+     76 9.409689000    109.105.97.45         192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     77 9.410710000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=37/9472, ttl=10 (no response found!)
+     78 9.518251000    109.105.97.45         192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     79 9.519105000    192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=38/9728, ttl=10 (no response found!)
+     80 9.631090000    109.105.97.45         192.168.252.164       ICMP     182    Time-to-live exceeded (Time to live exceeded in transit)
+     81 9.632542000    192.168.252.164       193.40.252.144        DNS      86     Standard query 0x4b1c  PTR 45.97.105.109.in-addr.arpa
+     82 9.634009000    193.40.252.144        192.168.252.164       DNS      209    Standard query response 0x4b1c  PTR us-man.nordu.net
+     83 10.514318000   192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=39/9984, ttl=11 (no response found!)
+     84 10.630148000   109.105.97.70         192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+     85 10.630993000   192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=40/10240, ttl=11 (no response found!)
+     86 10.745008000   109.105.97.70         192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+     87 10.746056000   192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=41/10496, ttl=11 (no response found!)
+     88 10.869966000   109.105.97.70         192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+     89 10.871293000   192.168.252.164       193.40.252.144        DNS      86     Standard query 0xc335  PTR 70.97.105.109.in-addr.arpa
+     90 10.872719000   193.40.252.144        192.168.252.164       DNS      209    Standard query response 0xc335  PTR us-ash.nordu.net
+     91 11.762347000   192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=42/10752, ttl=12 (no response found!)
+     92 11.877164000   206.126.236.112       192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+     93 11.878026000   192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=43/11008, ttl=12 (no response found!)
+     94 11.994738000   206.126.236.112       192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+     95 11.995350000   192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=44/11264, ttl=12 (no response found!)
+     96 12.110174000   206.126.236.112       192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+     97 12.111493000   192.168.252.164       193.40.252.144        DNS      88     Standard query 0x8633  PTR 112.236.126.206.in-addr.arpa
+     98 13.119245000   192.168.252.164       193.40.254.227        DNS      88     Standard query 0x8633  PTR 112.236.126.206.in-addr.arpa
+     99 13.897359000   193.40.254.227        192.168.252.164       DNS      482    Standard query response 0x8633  PTR core1.dca.edgecastcdn.net
+    100 14.564531000   193.40.252.144        192.168.252.164       DNS      482    Standard query response 0x8633  PTR core1.dca.edgecastcdn.net
+    101 14.773108000   192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=45/11520, ttl=13 (no response found!)
+    102 14.887181000   198.7.25.16           192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+    103 14.888080000   192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=46/11776, ttl=13 (no response found!)
+    104 15.002943000   198.7.25.16           192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+    105 15.003803000   192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=47/12032, ttl=13 (no response found!)
+    106 15.117397000   198.7.25.16           192.168.252.164       ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+    107 15.118717000   192.168.252.164       193.40.254.227        DNS      84     Standard query 0x0ca9  PTR 16.25.7.198.in-addr.arpa
+    108 15.153343000   193.40.254.227        192.168.252.164       DNS      161    Standard query response 0x0ca9  PTR 198-7-25-16.edgecastcdn.net
+    109 16.036683000   192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=48/12288, ttl=14 (reply in 110)
+    110 16.150542000   93.184.216.119        192.168.252.164       ICMP     106    Echo (ping) reply    id=0x0001, seq=48/12288, ttl=52 (request in 109)
+    111 16.151413000   192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=49/12544, ttl=14 (reply in 112)
+    112 16.266495000   93.184.216.119        192.168.252.164       ICMP     106    Echo (ping) reply    id=0x0001, seq=49/12544, ttl=52 (request in 111)
+    113 16.267077000   192.168.252.164       93.184.216.119        ICMP     106    Echo (ping) request  id=0x0001, seq=50/12800, ttl=14 (reply in 114)
+    114 16.380935000   93.184.216.119        192.168.252.164       ICMP     106    Echo (ping) reply    id=0x0001, seq=50/12800, ttl=52 (request in 113)
+    115 16.382261000   192.168.252.164       193.40.254.227        DNS      87     Standard query 0xc351  PTR 119.216.184.93.in-addr.arpa
+    116 16.416791000   193.40.254.227        192.168.252.164       DNS      158    Standard query response 0xc351 No such name

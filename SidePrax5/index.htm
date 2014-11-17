@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><title>Side labor 5 aruanne</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head><body>
+<h1>Side labor 5 Juurdepääs arvutivõrku aruanne</h1>
+<table border="1" cellpadding="4" cellspacing="0">
+<tbody><tr>
+<td>Töö tegija nimi:</td>
+</tr>
+<tr>
+<td>Heigo Kruusimaa</td>
+</tr>
+<tr>
+<td>Töö tegemise kuupäev: Thu Nov 13 11:34:23 2014</td>
+</tr>
+</tbody></table>
+<p>
+
+
+</p><h2>4.2 Arvuti IP aadress</h2>
+<p>Enda arvuti IP aadress käsurealt vaadates:
+192.168.252.164
+</p><p>Oma võrgu marsruuteri IP aadress (Default Gateway):
+192.168.252.1
+</p><p>Nimeserverite IP aadressid (DNS servers):
+193.40.252.144, 193.40.254.227, 193.40.56.245
+</p><p>Veebilehel näidatud enda arvuti IP aadress:
+193.40.252.132
+</p><p>Mis on võimalike erinevuste põhjuseks?
+Command promptis näeb ruuteri poolt antud sisevõrgu aadressi, antud leht näitab välist teenusepakkuja poolt antud IP aadressi.
+</p>
+
+<h2>4.3 Ping (protokollid ARP, ICMP, UDP, DNS)</h2>
+<p>
+<img src="Pings.PNG" alt="Pingi tulemused">
+</p><p>Mida programm ping teeb ja mida tulemus näitab?
+Saadab meie täpsustatud sihtmärgile 32 baidi suuruses ICMP pakette neli korda (parameetreid saab muuta).
+Tulemus näitab, kas ühendus õnnestus (kas pakett saadeti tagasi) ning kui kaua võttis ühenduse loomine aega. Pingide lõpuks kuvatakse kokkuvõttev statistika.
+</p><p>
+</p><h4>ARP </h4>
+<p>Milliste protokollide päiseid ARP paketid sisaldavad?
+eth:ethertype:arp
+</p><p>Millisele aadressile saadetakse ARP päring?
+IP aadress: 192.168.252.79, MAC aadress: päring näitab Broadcasti MAC aadressi ff:ff:ff:ff:ff:ff, ehk me veel ei tea sihtkoha MAC aadressi.
+</p><p>Milliselt aadressilt tuleb ARP vastus?
+IP aadress: 192.168.252.79, MAC aadress: 52:54:00:ca:94:db
+</p><p>Milline on ARP pakettide sisu?
+ARP sisaldab võrguriistvara ja kasutatava protokolli tüüpi ning nende aadresside (siinkohal IP ja MAC) suurust, operatsiooni koodi (päring, vastus) ning saatja ja sihtmärgi IP ja MAC aadressi.
+</p><p>Ekraanipilt Wiresharki keskmisest aknast, kus näha dekodeeritud kujul ARP päringu paketis EthernetII ja ARP osa 
+ning teine ekraanipilt Wiresharki keskmisest aknast, kus näha ARP vastuse paketis dekodeeritud EthernetII ja ARP osa.
+</p><p>
+<img src="ARP1.PNG" alt="ARP paring">
+</p><p>
+<img src="ARP2.PNG" alt="ARP vastus">
+</p><h4>IP</h4>
+<p>Millised väljad on IP päises?
+Version, Header length, Differentiated Services Field, Total Length, 
+Identification, Flags, Fragment offset, Time to live, Protocol, Header 
+checksum, Source, Destination
+</p><p>Lisada ekraanipilt ühest paketist (ping vastus) Wiresharki keskmises aknas, kus IP osa on tervenisti lahti.
+</p><p>
+<img src="IP_ping_reply.PNG" alt="Ping vastus">
+</p><h4>ICMP</h4>
+<p>Milliste protokollide päiseid ICMP paketid sisaldavad?
+eth:ethertype:ip:icmp:data
+</p><p>Millisele aadressile saadetakse ping päring (MAC aadress ja IP aadress)?
+52:54:00:ca:94:db ja 192.168.252.79
+</p><p>Milliselt aadressilt tuleb vastus (MAC aadress ja IP aadress)?
+52:54:00:ca:94:db ja 192.168.252.79
+</p><p>Mis on päringu ja vastuse Data osas (kirjeldada oma sõnadega andmete kogust ja sisu)?
+32 baidi pikkune kood, mis sisaldab (inglise) tähestikku
+</p><p>Ekraanipildid ping päringu ja ping vastuse Wiresharki keskmisest aknast, kus dekodeeritud ICMP paketi IP ja ICMP osa.
+</p><p><b>Laboris sai pilt võetud ainult vastusest, seega päringu pilt (esimene) on tehtud enda arvutist. Väljade täitmiseks kasutatud vaid labori ajal sisestatud andmeid ja vastuse pilti.</b><br>
+<img src="IP_ICMP_enda.PNG" alt="ICMP Ping request">
+</p><p>
+<img src="IP_ICMP.PNG" alt="ICMP Ping reply">
+</p><p>Millisele aadressile saadetakse ping päring (MAC aadress ja IP aadress)?
+00:0e:0c:73:ca:ce ja 93.184.216.119
+</p><p>Milliselt aadressilt tuleb vastus (MAC aadress ja IP aadress)?
+00:0e:0c:73:ca:ce ja 93.184.216.119
+</p><p>Ekraanipilt ping päringu ja ping vastuse pakettidest Wiresharki keskmises aknas, (kus kõik plussid kinni).
+</p><p>
+</p><p><b>Laboris sai pilt võetud ainult vastusest, seega päringu pilt (esimene) on tehtud enda arvutist. Väljade täitmiseks kasutatud vaid labori ajal sisestatud andmeid ja vastuse pilti.</b><br>
+</p><p>
+<img src="IP_ICMP2_enda.PNG" alt="ICMP Ping closed query">
+</p><p>
+<img src="IP_ICMP2.PNG" alt="ICMP Ping closed reply">
+</p><h4>UDP, DNS</h4>
+<p>Milliste protokollide päiseid DNS paketid sisaldavad?
+eth:ethertype:ip:udp:dns
+</p><p>Kui pikk on UDP päis?
+8 baiti
+</p><p>Mis sisaldub UDP päises?
+Source port, Destination port, Length, Checksum
+</p><p>Milline on UDP pordi number DNS jaoks?
+65244
+</p><p>Mis sisaldub DNS osas?
+Transaction ID, Flags, Questions, Answer RRs, Authority RRs, Additional RRs, Queries, Answers, Authoritative nameservers
+</p><p>Ekraanipildid DNS päringu ja vastuse pakettidest Wiresharki keskmises aknas, kus UDP ja DNS osad on lahti.
+</p><p><b>Siin on päringu pilt võetud laborist, vastuse pilt (teine) on tehtud oma arvutist.</b><br>
+<img src="UDP_DNS.PNG" alt="UDP DNS query">
+</p><p>
+<img src="UDP_DNS_enda.PNG" alt="UDP DNS respones">
+</p><h3>4.4 Traceroute</h3>
+<p>Lisada ekraanipilt käsurealt olevatest traceroute tulemustest.
+</p><p>
+<img src="tracert_cmd.PNG" alt="Traceroute cmd">
+</p><p>Mis on traceroute tulemuseks üldiselt?
+Traceroute näitab kuid sinu päring jõuab sinu masinast sihtkohani, mitu ruuterit ta läbis, nende aadresse ja kulunud aega
+</p><p>Mitme marsruuteri kaugusel meie võrgust asub www.example.com?
+14
+</p><p>Milliseid protokolle kasutatakse tracert käsu täitmiseks?
+DNS ja ICMP
+</p><p>Milline paketi eluaja (Time To Live, TTL) väärtus on päringu 
+pakettidel ning vastuse pakettidel?
+Päringu pakettidel suureneb TTL ühe võrra igal hüppel kaugemale kodust 
+(1 -&gt; 13). Vastuse pakettidel väheneb ühe võrra igal sammul alates 
+64 -&gt; 63 ja siis alates 253 -&gt; 244
+</p><p>Mida TTL näitab?
+TTL näitab andmete maksimaalset eluiga. Kui ta nulli jõuab, lõpetatakse andmete edastamine ja antakse Time-to-live exceeded teade.
+</p><p>Lisada Wiresharkist salvestatud pakettide faili sisu.
+</p><p>
+<a href="tracert_wireshark.txt">Paketid</a>
+
+</p><h2>4.5 WWW (protokollid TCP, HTTP)</h2>
+<p>Teha ekraanipilt külastatud veebilehest. 
+</p><p>
+<img src="Sait.PNG" alt="Veebileht" height="700px">
+</p><p>Salvestada lehe lähtekood.
+</p><p>
+<a href="Sidevorgud.txt">Lähtekood</a>
+</p><h4>TCP</h4>
+<p>Milliste protokollide päiseid saadud paketid sisaldavad?
+eth:ethertype:ip:tcp:http
+</p><p>Kui pikk on TCP päis?
+32 baiti
+</p><p>Millised väljad sisalduvad TCP päises?
+Source Port, Destination Port, Sequence Number, Acknowledgement number, 
+Header length, Flags, Window size value, Checksum, Urgent Pointer, 
+Options
+</p><p>Kuidas TCP seanssi alustatakse (3 esimest paketti)?
+49294 &gt; 80 SYN ===> 80 &gt; 49294 SYN, ACK ===> 49294 &gt; 80 ACK.
+</p><p>Kuidas TCP seanssi lõpetatakse (4 viimast paketti)?
+80 &gt; 49294 FIN, ACK ===> 49294 &gt; 80 ACK ===> 49294 &gt; 80 FIN, ACK ===> 49294 &gt; 80 ACK
+</p><p>Salvestada Wiresharki ekraanipilt ühest paketist, kus keskmises aknas on TCP osa lahti.
+</p><p>
+<img src="TCP.PNG" alt="TCP pakett">
+</p><p>
+</p><h4>HTTP</h4>
+<p>Milline HTTP päring saadetakse (järgmine pakett, mille Teie arvuti saatis pärast TCP ühenduse loomist)?
+GET / HTTP/1.1
+</p><p>Milline tuleb HTTP vastus sellele päringule?
+HTTP/1.1 200 OK (text/html)
+</p><p>Milline on TCP pordi number HTTP jaoks?
+80
+</p><p>Ekraanipilt päringu paketist Wiresharki keskmine osa, kus HTTP 
+osa on lahti ning vastuse paketist Wiresharki keskmine osa, kus HTTP osa
+ on lahti.
+</p><p>
+<img src="HTTP_req.PNG" alt="HTTP paring">
+</p><p>
+<img src="HTTP_res.PNG" alt="HTTP vastus">
+</p><h2>4.6 Individuaalülesanne</h2>
+<h3>Lähteandmete kogumine</h3>
+<p>Salvestada ekraanipilt ping käsureast ja tulemustest.
+</p><p>
+<img src="Iseseisev_cmd.png" alt="Iseseisev ping cmd">
+</p><table border="1" cellpadding="4" cellspacing="0">
+<tbody><tr>
+<td>Üliõpilaskood</td>
+<td>134493IAPB</td>
+</tr>
+<tr>
+<td>Ping käsurida: </td>
+<td>ping -n 10 -l 2400 www.example.com</td>
+</tr>
+<tr>
+<td>Keskmine RTT</td>
+<td>104ms</td>
+</tr>
+<tr><td colspan="3">Wiresharkist leida:</td></tr>
+<tr>
+<td>mitmes fragmendis etteantud pikkusega ping päring saadeti.</td>
+<td>2 fragmendis</td>
+</tr>
+<tr>
+<td>päringu andmete (data) osa pikkus (kõikides fragmentides kokku)
+</td><td>2400 baiti</td>
+</tr>
+<tr>
+<td>EthernetII päise pikkus.</td>
+<td>14 baiti</td>
+</tr>
+<tr>
+<td>IP päise pikkus.</td>
+<td>20 baiti</td>
+</tr>
+<tr>
+<td>ICMP päise pikkus.</td>
+<td>8 baiti</td>
+</tr></tbody></table>
+
+<p>
+</p><p>Salvestada Wiresharki ekraanipilt, kus peal ülemises aknas üks 
+päring koos fragmentidega ja üks vastus fragmentidega (iga pakett on üks
+ rida).
+ </p><p>
+ <img src="Iseseisev_wireshark.png" alt="Wireshark iseseisev" height="700px">
+</p><p>
+Vastavalt matrikli numbrile: 1 + 3 + 4 + 4 + 9 + 3 = 24; 24 * 100 = 2400.
+</p><p>
+Päring saadeti kahes fragmendis (ICMP ja IPv4), mille data osad olid 1480 (IPv4 fragmendis) + 920 (ICMP fragmendis) = 2400 baiti.
+</p><p>
+Päiseid oli  20 + 14 + 8 (ICMP paketis) + 20 + 14 (IPv4 paketis) = 76 baiti. Kokku saadeti seega 2400 + 76 = 2476 baiti.
+</p><p>
+Kiirus: 2,476 kilobaiti / 0,104 s = 23,8 KB/s
+</p><p>
+Efektiivsus: (2400 baiti / 2476 baiti) * 100 = 96,9%
+</p><p>
+
+</p><h2>Kokkuvõte ja järeldused</h2>
+<p>Selles laboris analüüsisime võrguühendusi programmi Wireshark abil, saates serveritele ping ning tracert päringuid. Uurisime erinevaid ühenduse protokolle, mis andmeid nad sisaldavad, mis 
+asuvad erinevate protokollide päistes. Individuaalülesandes hindasime ping käsu abil ühenduse kiirust ning efektiivsust etteantud serveriga.</p>
+
+
+</body></html>
