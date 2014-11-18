@@ -41,7 +41,7 @@ Tulemus näitab, kas ühendus õnnestus (kas pakett saadeti tagasi) ning kui kau
 <p>Milliste protokollide päiseid ARP paketid sisaldavad?
 eth:ethertype:arp
 </p><p>Millisele aadressile saadetakse ARP päring?
-IP aadress: 192.168.252.79, MAC aadress: päring näitab Broadcasti MAC aadressi ff:ff:ff:ff:ff:ff, ehk me veel ei tea sihtkoha MAC aadressi.
+MAC aadress: päring näitab Broadcasti MAC aadressi ff:ff:ff:ff:ff:ff, ehk me veel ei tea sihtkoha MAC aadressi.
 </p><p>Milliselt aadressilt tuleb ARP vastus?
 IP aadress: 192.168.252.79, MAC aadress: 52:54:00:ca:94:db
 </p><p>Milline on ARP pakettide sisu?
@@ -93,7 +93,7 @@ eth:ethertype:ip:udp:dns
 </p><p>Mis sisaldub UDP päises?
 Source port, Destination port, Length, Checksum
 </p><p>Milline on UDP pordi number DNS jaoks?
-65244
+53
 </p><p>Mis sisaldub DNS osas?
 Transaction ID, Flags, Questions, Answer RRs, Authority RRs, Additional RRs, Queries, Answers, Authoritative nameservers
 </p><p>Ekraanipildid DNS päringu ja vastuse pakettidest Wiresharki keskmises aknas, kus UDP ja DNS osad on lahti.
@@ -213,7 +213,7 @@ Päring saadeti kahes fragmendis (ICMP ja IPv4), mille data osad olid 1480 (IPv4
 </p><p>
 Päiseid oli  20 + 14 + 8 (ICMP paketis) + 20 + 14 (IPv4 paketis) = 76 baiti. Kokku saadeti seega 2400 + 76 = 2476 baiti.
 </p><p>
-Kiirus: 2,476 kilobaiti / 0,104 s = 23,8 KB/s
+Kiirus: 2,476 kilobaiti / (0,104 s / 2) = 47,6 KB/s
 </p><p>
 Efektiivsus: (2400 baiti / 2476 baiti) * 100 = 96,9%
 </p><p>
