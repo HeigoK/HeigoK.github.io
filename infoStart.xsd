@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://football.dataaccess.eu" xmlns:tns="http://footballpool.dataaccess.eu">
+<xs:schema xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://footballpool.dataaccess.eu" targetNamespace="http://footballpool.dataaccess.eu">
     <xs:complexType name="tStadiumInfo">
         <xs:sequence>
             <xs:element name="tStadiumName" type="xs:string"/>
@@ -17,11 +17,6 @@
             <xs:element name="sWikipediaURL" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="ArrayOftGameCard">
-        <xs:sequence>
-            <xs:element name="tGameCard" type="tns:tGameCard" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
-        </xs:sequence>
-    </xs:complexType>
     <xs:complexType name="tGameCard">
         <xs:sequence>
             <xs:element name="dGame" type="xs:date"/>
@@ -34,6 +29,11 @@
             <xs:element name="sTeamFlagLarge" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
+    <xs:complexType name="ArrayOftGameCard">
+        <xs:sequence>
+            <xs:element name="tGameCard" type="tns:tGameCard" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
     <xs:complexType name="tGoal">
         <xs:sequence>
             <xs:element name="dGame" type="xs:date"/>
@@ -43,18 +43,6 @@
             <xs:element name="sTeamFlag" type="xs:string"/>
             <xs:element name="sTeamFlagLarge" type="xs:string"/>
         </xs:sequence>
-    </xs:complexType>
-    <xs:complexType>
-        <xs:complexContent>
-            <xs:sequence>
-                <xs:element name="dGame" type="xs:date"/>
-                <xs:element name="iMinute" type="xs:int"/>
-                <xs:element name="sPlayerName" type="xs:string"/>
-                <xs:element name="sTeamName" type="xs:string"/>
-                <xs:element name="sTeamFlag" type="xs:string"/>
-                <xs:element name="sTeamFlagLarge" type="xs:string"/>
-            </xs:sequence>
-        </xs:complexContent>
     </xs:complexType>
     <xs:complexType name="ArrayOftGoal">
         <xs:sequence>
