@@ -76,18 +76,22 @@
             <xs:element name="string" type="xs:string" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
         </xs:sequence>
     </xs:complexType>
+	<xs:complexType name="CitiesResponseType">
+		<xs:sequence>
+			<xs:element name="CitiesResult" type="tns:ArrayOfString"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="GamesPerCityResponseType">
+		<xs:sequence>
+			<xs:element name="GamesPerCityResult" type="tns:ArrayOftGameInfo"/>
+		</xs:sequence>
+	</xs:complexType>
     <xs:element name="Cities">
         <xs:complexType>
             <xs:sequence/>
         </xs:complexType>
     </xs:element>
-	<xs:element name="CitiesResponse">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="CitiesResult" type="tns:ArrayOfString"/>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
+	<xs:element name="CitiesResponse" type="tns:CitiesResponseType"/>
     <xs:element name="GamesPerCity">
         <xs:complexType>
             <xs:sequence>
@@ -95,11 +99,5 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-	<xs:element name="GamesPerCityResponse">
-		<xs:complexType>
-			<xs:sequence>
-				<xs:element name="GamesPerCityResult" type="tns:ArrayOftGameInfo"/>
-			</xs:sequence>
-		</xs:complexType>
-	</xs:element>
+	<xs:element name="GamesPerCityResponse" type="tns:GamesPerCityResponseType"/>
 </xs:schema>
