@@ -93,9 +93,11 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-    <xs:complexType name="GamesPerCityResponse">
-        <xs:sequence>
-            <xs:element name="GamesPerCityResult" type="tns:ArrayOftGameInfo"/>
-        </xs:sequence>
-    </xs:complexType>
+	<xs:element name="GamesPerCityResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="GamesPerCityResult" type="tns:ArrayOftGameInfo"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 </xs:schema>
