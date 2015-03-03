@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://football.dataaccess.eu" xmlns:tns="http://footballpool.dataaccess.eu">
+    <xs:complexType name="tStadiumInfo">
+        <xs:sequence>
+            <xs:element name="tStadiumName" type="xs:string"/>
+            <xs:element name="iSeatsCapacity" type="xs:int"/>
+            <xs:element name="sCityName" type="xs:string"/>
+            <xs:element name="sWikipediaURL" type="xs:string"/>
+            <xs:element name="sGoogleMapsURL" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tTeamInfo">
+        <xs:sequence>
+            <xs:element name="iId" type="xs:int"/>
+            <xs:element name="sName" type="xs:string"/>
+            <xs:element name="sCountryFlag" type="xs:string"/>
+            <xs:element name="sWikipediaURL" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ArrayOftGameCard">
+        <xs:sequence>
+            <xs:element name="tGameCard" type="tns:tGameCard" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tGameCard">
+        <xs:sequence>
+            <xs:element name="dGame" type="xs:date"/>
+            <xs:element name="iMinute" type="xs:int"/>
+            <xs:element name="sPlayerName" type="xs:string"/>
+            <xs:element name="bYellowCard" type="xs:boolean"/>
+            <xs:element name="bRedCard" type="xs:boolean"/>
+            <xs:element name="sTeamName" type="xs:string"/>
+            <xs:element name="sTeamFlag" type="xs:string"/>
+            <xs:element name="sTeamFlagLarge" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tGoal">
+        <xs:sequence>
+            <xs:element name="dGame" type="xs:date"/>
+            <xs:element name="iMinute" type="xs:int"/>
+            <xs:element name="sPlayerName" type="xs:string"/>
+            <xs:element name="sTeamName" type="xs:string"/>
+            <xs:element name="sTeamFlag" type="xs:string"/>
+            <xs:element name="sTeamFlagLarge" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType>
+        <xs:complexContent>
+            <xs:sequence>
+                <xs:element name="dGame" type="xs:date"/>
+                <xs:element name="iMinute" type="xs:int"/>
+                <xs:element name="sPlayerName" type="xs:string"/>
+                <xs:element name="sTeamName" type="xs:string"/>
+                <xs:element name="sTeamFlag" type="xs:string"/>
+                <xs:element name="sTeamFlagLarge" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="ArrayOftGoal">
+        <xs:sequence>
+            <xs:element name="tGoal" type="tns:tGoal" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="tGameInfo">
+        <xs:sequence>
+            <xs:element name="iId" type="xs:int"/>
+            <xs:element name="sDescription" type="xs:string"/>
+            <xs:element name="dPlayDate" type="xs:date"/>
+            <xs:element name="tPlayTime" type="xs:time"/>
+            <xs:element name="StadiumInfo" type="tns:tStadiumInfo"/>
+            <xs:element name="Team1" type="tns:tTeamInfo"/>
+            <xs:element name="Team2" type="tns:tTeamInfo"/>
+            <xs:element name="sResult" type="xs:string"/>
+            <xs:element name="sScore" type="xs:string"/>
+            <xs:element name="iYellowCards" type="xs:int"/>
+            <xs:element name="iRedCards" type="xs:int"/>
+            <xs:element name="Cards" type="tns:ArrayOftGameCard"/>
+            <xs:element name="Goals" type="tns:ArrayOftGoal"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ArrayOftGameInfo">
+        <xs:sequence>
+            <xs:element name="tGameInfo" type="tns:tGameInfo" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="ArrayOfString">
+        <xs:sequence>
+            <xs:element name="string" type="xs:string" minOccurs="0" maxOccurs="unbounded" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Cities">
+        <xs:complexType>
+            <xs:sequence/>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="CitiesResponse">
+        <xs:sequence>
+            <xs:element name="CitiesResult" type="tns:ArrayOfString"/>
+		</xs:sequence>
+    </xs:complexType>
+    <xs:element name="GamesPerCity">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sCityName" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="GamesPerCityResponse">
+        <xs:sequence>
+            <xs:element name="GamesPerCityResult" type="tns:ArrayOftGameInfo"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
